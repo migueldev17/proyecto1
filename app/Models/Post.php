@@ -21,7 +21,7 @@ class Post extends Model
      * Relacion de muchos a muchos
      */
     public function tags(){
-        return $this->belongToMany(Tag::class);
+        return $this->belongsToMany(Tag::class);
     }
     public function Image(){
         return $this->morphOne(image::class,'imageable');
